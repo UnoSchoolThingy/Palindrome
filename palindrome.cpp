@@ -1,7 +1,7 @@
 /*
 * Uno Pasadhika
-* Palindrome - checks if a string is a palindrome or not 
-* 9/9/2022 
+* Palindrome - checks if a string is a palindrome or not
+* 9/9/2022
 */
 
 #include <iostream>
@@ -9,7 +9,7 @@
 
 using namespace std;
 
-// Check if a string is a palindrome 
+// Check if a string is a palindrome
 inline bool isPalindrome(char* s) {
   int len = strlen(s);
   for (int i = 0; i < len / 2; i++) {
@@ -21,14 +21,14 @@ inline bool isPalindrome(char* s) {
 int main() {
   cout << "Enter a string: ";
   char s[80];
-  cin >> s;
+  cin.getline(s, 80);
   {
     int idx = 0;
     char s2[80];
     for (int i = 0; i < strlen(s); i++) {
-      if (isalnum(s[i])) s2[idx++] = tolower(s[i]); // If it's a number tolower just returns the number 
+      if (isalnum(s[i])) s2[idx++] = tolower(s[i]); // If it's a number tolower just returns the number
     }
-    s2[idx] = 0; // zero terminate 
+    s2[idx] = 0; // zero terminate
     strcpy(s, s2); // copy string
   }
   cout << (isPalindrome(s) ? "Palindrome." : "Not a palindrome.") << "\n";
