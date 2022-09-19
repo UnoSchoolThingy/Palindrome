@@ -1,7 +1,7 @@
 /*
 * Uno Pasadhika
 * Palindrome - checks if a string is a palindrome or not
-* 9/9/2022
+* 9/19/2022
 */
 
 #include <iostream>
